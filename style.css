@@ -11,6 +11,13 @@
     --media-bg: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
     --white:#FFF;
     --light-blue: #CAC9FF;
+    --dark-navy: #303B59;
+    --resumo-div-bg: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    --reacao-bg: #FF5555;
+    --memoria-bg: #FFB21E;
+    --verbal-bg: #00BB8F;
+    --visual-bg: #1125D6;
+
 
 }
 
@@ -30,6 +37,7 @@ body {
     margin-bottom: 2.5rem;
 }
 .resultado div{
+
     width: 14rem;
     height: 14rem;
     background: var(--media-bg);
@@ -39,11 +47,12 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2.4rem;
+
 }
 .resultado div strong:nth-of-type(1) {
     font-size: 5.6rem;
     font-weight: 800;
-    line-height: 7.2rem;
+    line-height: 6.2rem;
 }
 .resultado div strong:nth-of-type(2) {
     color: var(--light-blue); 
@@ -56,4 +65,76 @@ body {
     max-width: 26rem;
     margin-inline: auto;
     color: var(--light-blue);
+ }
+
+ .resumo {
+    padding: 2.4rem 3.2rem;
+ }
+ .resumo h2 {
+    color: var(--dark-navy);
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+ }
+ .resumo > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1.2rem;
+ }
+ .resumo_reacao{
+    background: var(--reacao-bg) var(--resumo-div-bg);
+    color: var(--reacao-bg);
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1.2rem;
+
+ }
+ .resumo_memoria{
+    background: var(--memoria-bg) var(--resumo-div-bg);
+    color: var(--memoria-bg);
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1.2rem;
+ } 
+ .resumo_verbal {
+    background: var(--verbal-bg) var(--resumo-div-bg);
+    color: var(--verbal-bg);
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1.2rem;
+ }
+ .resumo_visual {
+    background: var(--visual-bg) var(--resumo-div-bg);
+    columns: var(--visual-bg);
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1.2rem;
+ }
+
+ .resumo> div div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: space-between;
+ }
+ .resumo > div strong{
+    color: var(--dark-navy);
+ }
+ .resumo >
+ div strong span {
+    opacity: 0.5;
+ }
+
+ .resumo button{
+    margin-top: 0.8rem;
+    width: 100%;
+    border: none;
+    background: var(--dark-navy);
+    color: var(--white);
+    padding-block: 1.6rem;
+    border-radius: 12.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
  }
